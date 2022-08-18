@@ -6,4 +6,7 @@ for the Fall 2022 Semester at Kennesaw State
 Current Assignments:
 1. Assignment 1A
 2. Assignment 1B
+3. Assignment 1C
+
+**I might set this repository public**
 
