@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Assignment1C {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
             char userChar;
 //        The variable was originally input, but I changed it to userChar to make it more readable
         System.out.println("[And the Next Letter is]");
