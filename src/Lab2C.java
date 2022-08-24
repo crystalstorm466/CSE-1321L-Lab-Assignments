@@ -14,7 +14,7 @@ public class Lab2C {
         double height;
         double firstPartOfPerimeter;
 
-        System.out.println("[CSE-1321L: Lab 2C]"); //unnecessary comment
+
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter a width: ");
         width = scan.nextDouble(); //this comment does not exist
