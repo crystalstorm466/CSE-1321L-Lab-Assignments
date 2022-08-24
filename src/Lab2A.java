@@ -23,7 +23,7 @@ public class Lab2A {
         secondName = scan.nextLine();
 
         System.out.print("Enter a verb: ");
-        verb = scan.nextLine();
+        verb = scan.nextLine(); //test
 
         System.out.print("Enter an adverb: ");
         adverb = scan.nextLine();
