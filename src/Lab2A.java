@@ -14,6 +14,7 @@ public class Lab2A {
         String secondName;
         String verb;
         String adverb;
+        System.out.println("[CSE1321L: Lab2A]");
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter a Name: ");
         firstName = scan.nextLine();
