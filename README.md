@@ -8,7 +8,7 @@ Current Assignments:
 2. Assignment 1B
 3. Assignment 1C
 4. Lab2A
-5. Lab2B 
+5. Lab2B
 6. Lab2C
 
 
