@@ -10,18 +10,17 @@ import java.util.*;
 
 public class Lab2C {
     public static void main(String[] args) {
-        double width;
-        double height;
-        double firstPartOfPerimeter;
+        int width;
+        int height;
+        int firstPartOfPerimeter;
 
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter a width: ");
-        width = scan.nextDouble(); //this comment does not exist
+        width = scan.nextInt(); //this comment does not exist
 
-        scan = new Scanner(System.in);
         System.out.print("Enter a height: ");
-        height = scan.nextDouble();
+        height = scan.nextInt();
 
         System.out.println("The area is " + height*width);
         firstPartOfPerimeter = height + width; // this probably doesn't need to be here
