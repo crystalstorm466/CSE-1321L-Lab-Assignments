@@ -12,20 +12,19 @@ public class Lab2C {
     public static void main(String[] args) {
         double width;
         double height;
-        double area;
         double firstPartOfPerimeter;
 
-        System.out.println("[CSE-1321L: Lab 2C]");
+        System.out.println("[CSE-1321L: Lab 2C]"); //unnecessary comment
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter a width: ");
-        width = scan.nextDouble();
+        width = scan.nextDouble(); //this comment does not exist
 
         scan = new Scanner(System.in);
         System.out.print("Enter a height: ");
         height = scan.nextDouble();
 
         System.out.println("The area is " + height*width);
-        firstPartOfPerimeter = height + width;
+        firstPartOfPerimeter = height + width; // this probably doesn't need to be here
         System.out.println("The perimeter is " + 2*firstPartOfPerimeter);
 
     }
