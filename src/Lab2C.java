@@ -14,7 +14,6 @@ public class Lab2C {
         int height;
         int firstPartOfPerimeter;
 
-
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter a width: ");
         width = scan.nextInt(); //this comment does not exist
@@ -25,6 +24,5 @@ public class Lab2C {
         System.out.println("The area is " + height*width);
         firstPartOfPerimeter = height + width; // this probably doesn't need to be here
         System.out.println("The perimeter is " + 2*firstPartOfPerimeter);
-
     }
 }

@@ -6,10 +6,8 @@
     Name: David Holland
     Lab#: 2
  */
-
 public class Lab2B {
     public static void main(String[] args) {
         System.out.print("___*___\n__*_*__\n_*_*_*_\n*_*_*_*\n_*_*_*_\n__*_*__\n___*___");
     }
-
 }
