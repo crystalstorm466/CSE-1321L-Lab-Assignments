@@ -6,8 +6,8 @@ public class Assignment1B {
         float labGrade;
         float assignmentGrade;
         float midtermGrade;
-        float finalGrade;
-        System.out.println("[CSE 1321L Final Grade Calculator]");
+        float finalGrade; //comment
+        System.out.println("[CSE 1321L Final Grade Calculator]"); //this prints something
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter your average lab grade: ");
         labGrade = scan.nextFloat();

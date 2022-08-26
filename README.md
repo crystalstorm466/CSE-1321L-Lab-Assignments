@@ -7,10 +7,14 @@ Current Assignments:
 1. Assignment 1A
 2. Assignment 1B
 3. Assignment 1C
-4. Lab2A
+4. Lab2A 
 5. Lab2B
 6. Lab2C
 
 
 **I might set this repository public**
+
+**If this repository becomes public do not 
+let any one find out that I posted this. 
+Just change it up a bit so the teacher doesn't think you copied**
 
