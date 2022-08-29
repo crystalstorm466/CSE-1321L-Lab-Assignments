@@ -10,6 +10,12 @@ Current Assignments:
 4. Lab2A 
 5. Lab2B
 6. Lab2C
+7. Assignment 2A
+8. Assignment 2B
+9. Assignment 2C
+10. Lab3A
+11. Lab3B
+12. Lab3C
 
 
 **I might set this repository public**
