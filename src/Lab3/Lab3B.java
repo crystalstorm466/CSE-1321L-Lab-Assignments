@@ -1,3 +1,4 @@
+package Lab3;
 /*
     Class: 1321L
     Section: J02
@@ -6,7 +7,6 @@
     Name: David Holland
     Lab#: 3
  */
-package Lab3; //ignore this; this exists here as I organize my code into folders (packages) in intelliJ and GitHub.
 import java.util.*;
 import java.text.DecimalFormat;
 
@@ -50,8 +50,7 @@ public class Lab3B {
         System.out.println("Total hours is: " + totalHours);
         System.out.println("Total quality points is: " + totalQualityPoints);
 
-        System.out.println("Your GPA for this semester is: " + roundTotalQualityPoints.format(totalQualityPoints/totalHours));
-
+        System.out.println("Your GPA for this semester is " + totalQualityPoints/totalHours);
 
     }
 }

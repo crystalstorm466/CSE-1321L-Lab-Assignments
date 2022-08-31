@@ -1,3 +1,4 @@
+package Lab3;
 /*
     Class: 1321L
     Section: J02
@@ -6,7 +7,6 @@
     Name: David Holland
     Lab#: 3
  */
-package Lab3; //ignore this; this exists here as I organize my code into folders (packages) in intelliJ and GitHub.
 import java.text.DecimalFormat;
 import java.util.*;
 
@@ -28,10 +28,10 @@ public class Lab3C {
         System.out.print("Enter the number of pennies: ");
         penny = scan.nextFloat();
 
-        System.out.println("You entered " + quarter + " quaters.");
-        System.out.println("You entered " + dime + " dimes.");
-        System.out.println("You entered " + nickle + " nickles.");
-        System.out.println("You entered " + penny + " pennies.");
+        System.out.println("You entered " + (int) quarter + " quarters.");
+        System.out.println("You entered " + (int) dime + " dimes.");
+        System.out.println("You entered " + (int) nickle + " nickels.");
+        System.out.println("You entered " + (int) penny + " pennies.");
 
         quarter*=0.25;
         dime*=0.10;
@@ -43,10 +43,10 @@ public class Lab3C {
         if ( coins >= 1) {
              dollars = (int) (coins % 100);
 
-            System.out.println("Your total is " + (int) dollars + " dollars and " +  roundCoins.format((coins*100)%100) + " cents");
+            System.out.println("Your total is " + (int) dollars + " dollars and " +  roundCoins.format((coins*100)%100) + " cents.");
         }
             else {
-               System.out.println("Your total is 0 dollars and " + roundCoins.format((coins)*100) + " cents");
+               System.out.println("Your total is 0 dollars and " + roundCoins.format((coins)*100) + " cents.");
         }
 
     }
