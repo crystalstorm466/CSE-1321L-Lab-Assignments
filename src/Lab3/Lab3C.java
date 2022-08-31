@@ -7,15 +7,12 @@
     Lab#: 3
  */
 package Lab3; //ignore this; this exists here as I organize my code into folders (packages) in intelliJ and GitHub.
+import java.text.DecimalFormat;
 import java.util.*;
 
 public class Lab3C {
     public static void main(String[] args) {
-        float quarter;
-        float dime;
-        float penny;
-        float nickle;
-        float dollars;
+        float quarter, dime, penny, nickle, dollars;
 
 
         Scanner scan = new Scanner(System.in);
@@ -42,14 +39,14 @@ public class Lab3C {
         penny*=0.01;
         double coins;
         coins = (quarter+dime+nickle+penny);
+        DecimalFormat roundCoins = new DecimalFormat("###");
+        if ( coins >= 1) {
+             dollars = (int) (coins % 100);
 
-        double v = 1.00;
-        if ( coins >= v) {
-             dollars = (float) (coins % 100);
-            System.out.println("Your total is " + (int) dollars + " dollars and " + (int) coins*100 + " cents");
+            System.out.println("Your total is " + (int) dollars + " dollars and " +  roundCoins.format((coins*100)%100) + " cents");
         }
             else {
-               System.out.println("Your total is 0 dollars and " + (quarter + dime + nickle + penny)*100 + " cents");
+               System.out.println("Your total is 0 dollars and " + roundCoins.format((coins)*100) + " cents");
         }
 
     }

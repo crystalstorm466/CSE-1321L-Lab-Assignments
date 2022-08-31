@@ -8,16 +8,12 @@
  */
 package Lab3; //ignore this; this exists here as I organize my code into folders (packages) in intelliJ and GitHub.
 import java.util.*;
+import java.text.DecimalFormat;
+
 public class Lab3B {
     public static void main(String[] args) {
-        float courseOne;
-        float courseTwo;
-        float courseThree;
-        float courseFour;
-        float gradeOne;
-        float gradeTwo;
-        float gradeThree;
-        float gradeFour;
+        float courseOne, courseTwo, courseThree, courseFour; // didn't put course and grade together as I wanted to organize
+        float gradeOne, gradeTwo, gradeThree, gradeFour;
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Course 1 hours: ");
@@ -47,14 +43,14 @@ public class Lab3B {
         gradeFour = scan.nextFloat();
         float qualityFour;
         qualityFour = courseFour*gradeFour;
-
+        DecimalFormat roundTotalQualityPoints = new DecimalFormat("#.#####");
         float totalHours = courseOne+courseTwo+courseThree+courseFour;
         float totalQualityPoints = qualityOne+qualityTwo+qualityThree+qualityFour;
 
         System.out.println("Total hours is: " + totalHours);
         System.out.println("Total quality points is: " + totalQualityPoints);
 
-        System.out.println("Your GPA for this semester is: " + totalQualityPoints/totalHours);
+        System.out.println("Your GPA for this semester is: " + roundTotalQualityPoints.format(totalQualityPoints/totalHours));
 
 
     }
