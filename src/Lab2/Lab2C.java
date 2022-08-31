@@ -1,4 +1,4 @@
-package Lab2;/*
+/*
     Class: 1321L
     Section: J02
     Term: Fall 2022
@@ -6,6 +6,7 @@ package Lab2;/*
     Name: David Holland
     Lab#: 2
  */
+package Lab2; //ignore this; this exists here as I organize my code into folders (packages) in intelliJ and GitHub.
 import java.util.*;
 
 public class Lab2C {

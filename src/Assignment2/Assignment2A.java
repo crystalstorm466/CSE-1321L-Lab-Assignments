@@ -1,4 +1,12 @@
-package Assignment2;
+/*
+    Class: 1321L
+    Section: J02
+    Term: Fall 2022
+    Instructor: Aarthi Poovalingam
+    Name: David Holland
+    Assignment#: 2
+ */
+package Assignment2; //ignore this; this exists here as I organize my code into folders (packages) in intelliJ and GitHub.
 import java.util.*;
 public class Assignment2A {
     public static void main(String[] args ) {

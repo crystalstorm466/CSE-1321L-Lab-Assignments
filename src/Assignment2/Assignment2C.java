@@ -6,9 +6,10 @@
     Name: David Holland
     Assignment#: 2
  */
-package Assignment2;
+package Assignment2; //ignore this; this exists here as I organize my code into folders (packages) in intelliJ and GitHub.
+import java.text.DecimalFormat;
 import java.util.*;
-
+import java.lang.Math; // found on educative.io to round
 public class Assignment2C {
     public static void main(String[] args) {
         int userUSDollar;
@@ -24,8 +25,9 @@ public class Assignment2C {
         userUSDollar = scan.nextInt();
         UKPound = (float) (userUSDollar*convertUKPound);
         BisPound = (float) (UKPound/convertBisPound);
+        DecimalFormat df = new DecimalFormat("##.##"); // found on baeldung.com/java-round-decimal-number
         System.out.println(userUSDollar + " US Dollar(s) " + UKPound + " British Pound(s),\n " +
-                "which is worth " + BisPound + " Bison Dollar(s)");
+                "which is worth " + df.format(BisPound) + " Bison Dollar(s)");
 
 
     }

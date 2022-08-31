@@ -6,10 +6,8 @@
     Name: David Holland
     Lab#: 3
  */
-package Lab3;
+package Lab3; //ignore this; this exists here as I organize my code into folders (packages) in intelliJ and GitHub.
 import java.util.*;
-
-import static java.lang.String.format;
 
 public class Lab3C {
     public static void main(String[] args) {
