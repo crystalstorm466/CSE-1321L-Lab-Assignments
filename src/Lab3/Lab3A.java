@@ -1,3 +1,4 @@
+package Lab3;
 /*
     Class: 1321L
     Section: J02
@@ -6,7 +7,6 @@
     Name: David Holland
     Lab#: 3
  */
-package Lab3;
 import java.text.DecimalFormat;
 import java.util.*;
 public class Lab3A {
@@ -14,7 +14,7 @@ public class Lab3A {
 
         float APR, minPayment, amountOwned;
         Scanner sc = new Scanner(System.in);
-        System.out.print("Amount Owned: ");
+        System.out.print("Amount Owed: $");
         amountOwned = sc.nextInt();
         System.out.print("APR: ");
         APR = sc.nextFloat();
