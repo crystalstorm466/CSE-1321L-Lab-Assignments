@@ -26,7 +26,21 @@ public class Lab4C {
 
         switch (userChoice) {
             case 0:
-                userNumber.
+                System.out.println("The additive inverse of " + userNumber + " is " + -userNumber );
+                break;
+            case 1:
+                System.out.println("The reciprocal of " + userNumber + " is " + 1/userNumber);
+                break;
+            case 2:
+                System.out.println("The square of " + userNumber + " is " + Math.pow(userNumber,2));
+                break;
+            case 3:
+                System.out.println("The cube of " + userNumber + " is " + Math.cbrt(userNumber));
+                break;
+            case 4:
+                System.out.println("Thank you, goodbye!");
+            default:
+                System.out.println("Invalid input, please try again!");
         }
     }
 }

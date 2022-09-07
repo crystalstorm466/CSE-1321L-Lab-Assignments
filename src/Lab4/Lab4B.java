@@ -29,7 +29,7 @@ public class Lab4B {
                 System.out.println("It's Friday! Friday! Gotta get down on Friday!");
                 break;
             default:
-                throw new RuntimeException("I should use this time to do my homework");
+                System.out.println("I should use this time to do my homework");
         }
     }
 }
