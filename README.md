@@ -16,7 +16,9 @@ Current Assignments:
 10. Lab3A
 11. Lab3B
 12. Lab3C
-
+13. Lab4A
+14. Lab4B
+15. Lab4C
 
 **I might set this repository public**
 
