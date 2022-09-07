@@ -6,7 +6,7 @@
     Name: David Holland
     Lab#: 3
  */
-package Lab3; //ignore this; this exists here as I organize my code into folders (packages) in intelliJ and GitHub.
+package Lab3;
 import java.text.DecimalFormat;
 import java.util.*;
 
@@ -39,7 +39,7 @@ public class Lab3C {
         penny*=0.01;
         double coins;
         coins = (quarter+dime+nickle+penny);
-        DecimalFormat roundCoins = new DecimalFormat("###");
+        DecimalFormat roundCoins = new DecimalFormat("########");
         if ( coins >= 1) {
              dollars = (int) (coins % 100);
 

@@ -6,7 +6,7 @@
     Name: David Holland
     Lab#: 3
  */
-package Lab3; //ignore this; this exists here as I organize my code into folders (packages) in intelliJ and GitHub.
+package Lab3;
 import java.text.DecimalFormat;
 import java.util.*;
 public class Lab3A {
