@@ -3,19 +3,29 @@ import java.util.*;
 public class Lab5B {
     public static void main(String[] args) {
         int userInt;
-        int twoCPUInt = 2;
-        int threeCPUInt = 3;
-        int fiveCPUInt = 5;
+        int twoCPUInt;
+        int threeCPUInt;
+        int fiveCPUInt;
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter an integer: ");
         userInt = scan.nextInt();
-        twoCPUInt = userInt%twoCPUInt;
-        threeCPUInt = userInt%threeCPUInt;
-        fiveCPUInt = userInt%fiveCPUInt;
-       switch(twoCPUInt ||  threeCPUInt && fiveCPUInt) { //this doesnt work yet obviously
-           case (2):
-               System.out.println("This number is divisble by 2");
+        scan.nextLine();
 
+        if (((userInt % 2) == 0) || ((userInt % 3) == 0) || ((userInt % 5) == 0)) {
+            switch(userInt) {
+                case (2):
+
+            }
+        }
+
+       switch(userInt) { //this doesnt work yet obviously
+           case (2):
+
+           case (3):
+
+           case (5):
+           default:
+               System.out.println("Undefined");
         }
     }
 }
