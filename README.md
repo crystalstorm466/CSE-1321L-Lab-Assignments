@@ -1,5 +1,15 @@
 **CSE 1321L Program Problems Solving I Lab Assignments**
 
+Class: 1321L
+
+Section: J02
+
+Term: Fall 2022
+
+Instructor: Aarthi Poovalingam
+
+Name:David Holland
+
 This is my github repository of all my lab projects 
 for the Fall 2022 Semester at Kennesaw State University
 
