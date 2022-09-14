@@ -14,8 +14,11 @@ public class Lab5B {
         if (((userInt % 2) == 0) || ((userInt % 3) == 0) || ((userInt % 5) == 0)) {
             switch(userInt) {
                 case (2):
-
-            }
+                //TODO
+                    break;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + userInt);
+            } 
         }
 
        switch(userInt) { //this doesnt work yet obviously
