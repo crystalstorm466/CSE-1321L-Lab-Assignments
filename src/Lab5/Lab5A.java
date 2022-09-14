@@ -1,4 +1,12 @@
-package Lab5;
+/*
+    Class: 1321L
+    Section: J02
+    Term: Fall 2022
+    Instructor: Aarthi Poovalingam
+    Name: David Holland
+    Lab#: 5
+ */
+//package Lab5;
 import java.util.*;
 
 public class Lab5A {
