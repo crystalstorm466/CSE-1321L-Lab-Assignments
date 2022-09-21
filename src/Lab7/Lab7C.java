@@ -17,10 +17,10 @@ public class Lab7C {
         int i;
         System.out.println("This is the requested " + boxSize + "x" + boxSize + " right-triangle:");
         for (i = 0; i < boxSize;i++) {
-            for(int line = 0; line <= i; line++) {
-                System.out.print("");
+            for(int line = boxSize; line > i; line--) {
+                System.out.print("*");
             }
-            System.out.println("*");
+            System.out.println();
         }
 
 

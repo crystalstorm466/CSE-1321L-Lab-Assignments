@@ -11,14 +11,13 @@ import java.util.*;
 public class Lab6B {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int userChoice = 0;
+        int userChoice;
         int tries = 0;
 
-        while (!(userChoice >= 1 && userChoice <= 1000)) {
-            System.out.println("Invalid number");
-            System.out.print("Enter a number between 1 and 1000 ");
-            userChoice = scan.nextInt();
-            while (userChoice >= 1 && userChoice <= 1000) {
+        System.out.println("Enter a number between 1 and 1000 ");
+        userChoice = scan.nextInt();
+
+        while ((userChoice >= 1)) {
                 tries++;
                 Random rand = new Random();
                 float randInt = rand.nextInt(1000);
@@ -27,6 +26,10 @@ public class Lab6B {
                     break;
                 }
             }
+        while ((userChoice <= 0 || userChoice > 1000)) {
+            System.out.println("Invalid number");
+            System.out.println("Enter a number between 1 and 1000 ");
+            userChoice = scan.nextInt();
+        }
         }
     }
-}

@@ -15,13 +15,13 @@ public class Lab6C {
         Scanner scan = new Scanner(System.in);
         int balance = 1000;
         System.out.println("Welcome!\n" +
-                "You have " + balance + " in your account.");
+                "You have $" + balance + " in your account.");
         System.out.println(" ");
         boolean menuDone = true;
         do {
             System.out.println("Menu\n" +
                     "0 - Make a deposit\n" +
-                    "1 - Make a withdrawl\n" +
+                    "1 - Make a withdrawal\n" +
                     "2 - Display account value ");
             System.out.print("Please make a selection: ");
             int menuChoice = scan.nextInt();
@@ -30,7 +30,7 @@ public class Lab6C {
                 System.out.print("How much would you like to deposit? ");
                 int depositAmount = scan.nextInt();
                 balance += depositAmount;
-                System.out.println("Your current balance is " + balance);
+                System.out.println("Your current balance is $" + balance);
                 System.out.print("Would you like to return to the main menu (Y/N)? : ");
                 char answer = scan.next().charAt(0);
                 if (answer == 'N') {
@@ -42,7 +42,7 @@ public class Lab6C {
                 System.out.print("How much would you like to withdraw? ");
                 int withdrawAmount = scan.nextInt();
                 balance -= withdrawAmount;
-                System.out.println("Your current balance is " + balance);
+                System.out.println("Your current balance is $" + balance);
                 System.out.print("Would you like to return to the main menu (Y/N)? : ");
                 char answer = scan.next().charAt(0);
                 if (answer == 'N') {
@@ -51,7 +51,7 @@ public class Lab6C {
                     //do nothing return to top
                 }
             } else if (menuChoice == 2) {
-                System.out.println("Your current balance is " + balance);
+                System.out.println("Your current balance is $" + balance);
                 System.out.print("Would you like to return to the main menu (Y/N)? : ");
                 char answer = scan.next().charAt(0);
                 if (answer == 'N') {
