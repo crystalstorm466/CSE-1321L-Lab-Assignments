@@ -20,7 +20,7 @@ public class Assignment4A {
                     "Ghana\n" +
                     "(Type Quit to end the survey)\n" +
                     "");
-            String surveyChoice = scan.next(); //todo wont accept spaces in inputs for some reason
+            String surveyChoice = scan.nextLine();
             if (surveyChoice.equalsIgnoreCase("Italy")) {
                 Italy++;
                 System.out.println("Thank you!");
