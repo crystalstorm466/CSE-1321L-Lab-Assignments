@@ -5,11 +5,12 @@ public class Assignment4C {
         Scanner scan = new Scanner(System.in);
         System.out.println("[Backspace Animation]");
         System.out.println("Please enter your sentence: ");
-        String sentence = scan.next();
+        String sentence = scan.nextLine();
         System.out.println("How many letters do you want to backspace?");
         int lettersBack = scan.nextInt();
-        for (int i = 0; i < lettersBack; i++) {
-            System.out.print(sentence + "\b");
+        System.out.print(sentence);
+        for (int i = 0; i < lettersBack; i++) { //example could be wrong
+            System.out.print("\b\b ");
             Thread.sleep(500);
         }
     }
