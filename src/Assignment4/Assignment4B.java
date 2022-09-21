@@ -31,13 +31,22 @@ public class Assignment4B {
                    case -1:
                        System.out.print("Please input a number: ");
                        userNumber = scan.nextFloat();
-                       System.out.println("What would you like to do with this number\n" +
-                               "-1- Re-enter the number\n" +
-                               "0- Get the additive inverse of the number\n" +
-                               "1- Get the reciprocal of the number\n" +
-                               "2- Square the number\n" +
-                               "3- Cube the number\n" +
-                               "4- Exit the program");
+                       if (userNumber == 0) {
+                           System.out.println("What would you like to do with this number\n" +
+                                   "-1- Re-enter the number\n" +
+                                   "0- Get the additive inverse of the number\n" +
+                                   "2- Square the number\n" +
+                                   "3- Cube the number\n" +
+                                   "4- Exit the program");
+                       } else {
+                           System.out.println("What would you like to do with this number\n" +
+                                   "-1- Re-enter the number\n" +
+                                   "0- Get the additive inverse of the number\n" +
+                                   "1- Get the reciprocal of the number\n" +
+                                   "2- Square the number\n" +
+                                   "3- Cube the number\n" +
+                                   "4- Exit the program");
+                       }
                        userChoice = scan.nextInt();
                        break;
                    case 0:
@@ -85,7 +94,6 @@ public class Assignment4B {
                        userChoice = scan.nextInt();
                        break;
                    case 4:
-                       System.out.println("Thank you, goodbye!");
                        inProgress = false;
                        break;
                    default:
