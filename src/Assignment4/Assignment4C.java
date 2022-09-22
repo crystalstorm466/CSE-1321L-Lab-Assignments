@@ -9,7 +9,7 @@ public class Assignment4C {
         System.out.println("How many letters do you want to backspace?");
         int lettersBack = scan.nextInt();
         System.out.print(sentence);
-        for (int i = 0; i < lettersBack; i++) { //example could be wrong
+        for (int i = 1; i < lettersBack; i++) { //example could be wrong
             System.out.print("\b\b ");
             Thread.sleep(500);
         }

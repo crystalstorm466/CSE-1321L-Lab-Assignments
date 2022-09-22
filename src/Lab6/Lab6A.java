@@ -15,12 +15,11 @@ public class Lab6A {
         int maxInt = 0;
         Scanner scan = new Scanner(System.in);
         for (int i = 1; i <= 10; i++) {
-            if (userInt > maxInt) {
+            if (userInt >= maxInt) {
                 maxInt = userInt;
             }
             System.out.print("Please enter number " + i + ": ");
             userInt = scan.nextInt();
-
 
         }
         System.out.println("The largest number was " + maxInt);
