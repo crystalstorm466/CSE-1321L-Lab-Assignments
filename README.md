@@ -24,6 +24,7 @@ Current Assignments:
 8. Lab5
 9. Lab6
 10. Lab7
+11. Lab8
 
 **I might set this repository public**
 
