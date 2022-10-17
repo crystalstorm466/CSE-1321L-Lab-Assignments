@@ -18,14 +18,15 @@ Current Assignments:
 2. Assignment 2
 3. Assignment 3
 4. Assignment 4
-5. Lab2
-6. Lab3
-7. Lab4
-8. Lab5
-9. Lab6
-10. Lab7
-11. Lab8
-12. Lab9
+5. Lab 2
+6. Lab 3
+7. Lab 4
+8. Lab 5
+9. Lab 6
+10. Lab 7
+11. Lab 8
+12. Lab 9
+13. Lab 10
 
 **I might set this repository public**
 

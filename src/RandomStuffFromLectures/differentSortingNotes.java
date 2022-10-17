@@ -63,5 +63,12 @@ public class differentSortingNotes {
         if (!isTarget) {
             System.out.println("The target is not in the set.");
         }
+
+    /*
+        normalArray <Person> errorList = new ArrayList<Person>();
+        Arrays.sort(normalArray);
+        errorList.sort(null);
+
+     */
     }
 }
