@@ -6,8 +6,8 @@ public class Assignment5A {
 
         Scanner scan = new Scanner(System.in);
         boolean inProgress = true;
-
-        String [] friendsList = new String[5];
+        int counter = 1;
+        String [] friendsList = new String[6];
         while(inProgress) {
             System.out.println("What would you like to do?\n" +
                     "1) Enter a friend's name\n" +
@@ -16,50 +16,52 @@ public class Assignment5A {
                     "4) Quit");
             System.out.print("Your choice: ");
             int menuChoice = scan.nextInt();
-            int counter = 1;
             if (menuChoice == 1) {
                 System.out.print("Enter a name: ");
                 String friendsName = scan.next();
-                for (int i = 0; i <= friendsList.length; i++) {
-                    if(friendsName == friendsList[i]) {
+                for (int i = 1; i <= friendsList.length; i++) {
+                    if(friendsName == friendsList[counter]) {
                         System.out.println("Sorry, they're already on the list!");
                         break;
                     } else if (friendsList[counter] == null) {
                         friendsList[counter] = friendsName;
-                        counter++;
                         break;
                     } else {
                       System.out.println("Sorry, this list is full!");
                       break;
                     }
                 }
+                counter++;
+                continue;
             }
 
             if (menuChoice == 2) {
                 System.out.println("Enter a name: ");
-                String replaceName = scan.nextLine();
+                String replaceName = scan.next();
                 System.out.println("Enter an index: ");
                 int index = scan.nextInt();
 
                 if (friendsList[index] == replaceName) {
                     System.out.println("Sorry, they're already on the list!");
-                    break;
                 } else {
                     System.out.println(replaceName + " has replaced " + friendsList[index] + " on your friends list!");
                     friendsList[index] = replaceName;
-                    break;
+                    continue;
                 }
             }
 
             if (menuChoice == 3) {
                 System.out.println("Friend's List");
-                for (int i = 0; i < friendsList.length; i++) {
+                for (int i = 1; i < friendsList.length; i++) {
                     System.out.println(i + ") " + friendsList[i]);
                 }
             }
 
             if (menuChoice == 4) {
                 System.exit(0);
+            } else {
+                System.out.println("Sorry, that's an invalid command!");
+                System.out.println(" ");
             }
         }
     }

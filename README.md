@@ -18,6 +18,7 @@ Current Assignments:
 2. Assignment 2
 3. Assignment 3
 4. Assignment 4
+5. Assignment 5
 5. Lab 2
 6. Lab 3
 7. Lab 4
