@@ -37,9 +37,9 @@ public class Lab11A {
         Scanner scan = new Scanner(System.in);
         String exitChoice = scan.next();
         if (exitChoice.equalsIgnoreCase("yes")) { //this allows any form of YeS
-            return false; // or System.exit(0);
-        } else {
             return true;
+        } else {
+            return false; // or System.exit(0);
         }
     }
 }
