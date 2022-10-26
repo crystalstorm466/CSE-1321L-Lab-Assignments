@@ -36,7 +36,7 @@ public class Lab11A {
         System.out.print("Type YES to rerun. ");
         Scanner scan = new Scanner(System.in);
         String exitChoice = scan.next();
-        if (exitChoice.toLowerCase().equals("yes")) {
+        if (exitChoice.equalsIgnoreCase("yes")) { //this allows any form of YeS
             return false; // or System.exit(0);
         } else {
             return true;
