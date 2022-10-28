@@ -2,39 +2,139 @@ package Assignment6;
 import java.util.*;
 public class Assignment6C {
     public static void main(String[] args) {
-        String [] [] board = new String[4][4];
+        String[][] board = new String[4][4];
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board.length; j++) {
+                board[i][j] = " ";
+            }
+        }
         boolean gameInProgress = true;
         Scanner scan = new Scanner(System.in);
-       printBoard(board);
         int player = 1;
         while (gameInProgress) {
+            printBoard(board);
             if (player == 1) {
-                boolean isFull = isBoardFull(board);
                 addDisc(player, board);
                 player++;
             } else if (player == 2) {
                 addDisc(player, board);
-                player--;;
+                player--;
             }
-            printBoard(board);
+            if (isBoardFull(board)) {
+                System.out.println("Board is Full!");
+                break;
+            }
+            if (winHorizontal(player, board)) {
+                System.out.println("Player " + player + " wins!");
+                break;
+            } else if (winVertical(player, board)) {
+                System.out.println("Player " + player + " wins!");
+                break;
+            } else if (winDiagonal(player, board)) {
+                System.out.println("Player " + player + " wins!");
+                break;
+            }
         }
     }
 
-    public static void addDisc(int player, String[][] board) {
+    public static String[][] addDisc(int player, String[][] board) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Player " + player + ", enter a row: ");
         int placement = scan.nextInt();
-            if (player == 1) {
-                if (board[board.length - 1] [placement - 1] == " ") {
-                    board[board.length - 1] [placement - 1] = "X";;
+        for (int i = 3; i >= 0; i--) {
+            if (board[i][placement - 1] == " ") {
+                if (player == 1) {
+                    board[i][placement - 1] = "X";
+                    return board;
+                } else if (player == 2) {
+                    board[i][placement - 1] = "O";
+                    return board;
                 }
-            } else if (player == 2) {
-                board[board.length - 1] [placement] = "O";
+            }
         }
-
+        return board;
     }
 
-    public static void printBoard(String[][] board) {
+    public static boolean winVertical(int player, String[][] board) {
+        int winCond = 0;
+        String playerChar = null;
+        if (player == 1) {
+            playerChar = "X";
+        } else if (player == 2) {
+            playerChar = "O";
+        }
+
+        //iff statement to set char
+        for (int i = 0; i <= 3; i++) {
+
+            if (board[0][i] == playerChar && board[1][i] == playerChar && board[2][i] == playerChar && board[3][i] == playerChar) {
+                return true;
+            }
+        }
+            /*
+        }
+            if (player == 1 && !(winCond == 4)) {
+                if (board[i] [i] == "X") {
+                    winCond++;
+                } else if (player == 2 && !(winCond == 4)) {
+                    if (board[i][i] == "O") {
+                        winCond++;
+                    }
+                }
+
+        }
+        return false;*/
+        return false;
+    }
+
+
+
+    public static boolean winHorizontal(int player, String [] []board) {
+        String playerChar = null;
+        if (player == 1) {
+            playerChar = "X";
+        } else if (player == 2) {
+            playerChar = "O";
+        }
+        //iff statement to set char
+        for (int i = 0; i <= 3; i++) {
+
+            if (board [i][0] == playerChar && board [i][1] == playerChar &&board [i][2] == playerChar &&board [i][3] == playerChar)
+            {
+                return true;
+            }
+        }
+            /*
+        }
+            if (player == 1 && !(winCond == 4)) {
+                if (board[i] [i] == "X") {
+                    winCond++;
+                } else if (player == 2 && !(winCond == 4)) {
+                    if (board[i][i] == "O") {
+                        winCond++;
+                    }
+                }
+
+        }
+        return false;*/
+        return false;
+    }
+
+    //todo
+    public static boolean winDiagonal(int player, String [] []board) {
+        String playerChar = null;
+        if (player == 1) {
+            playerChar = "X";
+        } else if (player == 2) {
+            playerChar = "O";
+        }
+        //iff statement to set char
+        for (int i = 0; i <= 4; i++) {
+
+        }
+        return false;
+    }
+    public static String[][] printBoard(String[][] board) {
         int counter = 0;
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
@@ -42,21 +142,20 @@ public class Assignment6C {
             }
             System.out.println(" ");
         }
+        return board;
     }
 
     public static boolean isBoardFull(String[] [] board) {
         int counter = 0;
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board.length; j++) {
-                if (!(board[i][j] == " " )) {
-                    counter++;
+                if ((board[i][j] == " " )) {
+                    return  false;
                 }
             }
         }
-        if (counter >= 16) { // >= in case I calculated wrong
+
             return true;
-        } else {
-            return false;
         }
     }
-}
+
