@@ -11,24 +11,23 @@ import java.util.*;
 public class Lab8A {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-
-        System.out.println("Please enter 5 integers for the first array: ");
-        int [] firstArray = new int[6];
-        int [] secondArray = new int[6];
-        int [] sumArray = new int [5];
-        for (int a = 1; a <= 5; a++) {
-            System.out.print("Integer " + a +": ");
-            firstArray [a] = scan.nextInt();
-        }
-        System.out.println("Please enter 5 integers for the second array: ");
-        for (int b = 1; b <= 5; b++) {
-            System.out.print("Integer " + b +": ");
-            secondArray[b] = scan.nextInt();
+        int[] userArray1 = new int[5];
+        int[] userArray2 = new int[5];
+        System.out.print("Please enter 5 integers for the first array: ");
+        for (int i = 1; i < 6; i++) {
+            System.out.println("Integer " + i + ": ");
+            userArray1[i] = scan.nextInt();
 
         }
-        for (int c = 1; c <= 5; c++) {
-            sumArray[c-1] = firstArray[c] + secondArray[c];
+        System.out.print("Please enter 5 integers for the first second: ");
+        for (int c = 1; c < 6; c++) { //hey look its that other language
+            System.out.println("Integer " + c + ": ");
+            userArray2[c] = scan.nextInt();
         }
-        System.out.println("The resulting sums are " + Arrays.toString(sumArray));
+        int[] finalArray = new int[5];
+        for (int i = 1; i < 5; i++) {
+            finalArray[i] = userArray1[i] + userArray2[i];
+        }
+        System.out.println("The resulting sums are: " + Arrays.toString(finalArray));
     }
 }
