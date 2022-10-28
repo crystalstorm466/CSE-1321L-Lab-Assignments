@@ -31,7 +31,7 @@ Current Assignments:
 13. Lab 10
 14. Lab 11
 
-**--I might set this repository public--**
+**~~I might set this repository public~~**
 
 **If this repository becomes public do not 
 let any one find out that I posted this. 
