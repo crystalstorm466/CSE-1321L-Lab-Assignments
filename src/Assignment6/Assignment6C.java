@@ -66,24 +66,10 @@ public class Assignment6C {
 
         //iff statement to set char
         for (int i = 0; i <= 3; i++) {
-
             if (board[0][i] == playerChar && board[1][i] == playerChar && board[2][i] == playerChar && board[3][i] == playerChar) {
                 return true;
             }
         }
-            /*
-        }
-            if (player == 1 && !(winCond == 4)) {
-                if (board[i] [i] == "X") {
-                    winCond++;
-                } else if (player == 2 && !(winCond == 4)) {
-                    if (board[i][i] == "O") {
-                        winCond++;
-                    }
-                }
-
-        }
-        return false;*/
         return false;
     }
 
@@ -104,23 +90,12 @@ public class Assignment6C {
                 return true;
             }
         }
-            /*
-        }
-            if (player == 1 && !(winCond == 4)) {
-                if (board[i] [i] == "X") {
-                    winCond++;
-                } else if (player == 2 && !(winCond == 4)) {
-                    if (board[i][i] == "O") {
-                        winCond++;
-                    }
-                }
 
-        }
-        return false;*/
         return false;
     }
 
     //todo
+    // if this isn't setup when I submit it just ignore it
     public static boolean winDiagonal(int player, String [] []board) {
         String playerChar = null;
         if (player == 1) {
@@ -129,9 +104,7 @@ public class Assignment6C {
             playerChar = "O";
         }
         //iff statement to set char
-        for (int i = 0; i <= 4; i++) {
 
-        }
         return false;
     }
     public static String[][] printBoard(String[][] board) {
