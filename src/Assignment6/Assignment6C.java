@@ -30,9 +30,7 @@ public class Assignment6C {
             } else if (winVertical(player, board)) {
                 System.out.println("Player " + player + " wins!");
                 break;
-            } else if (winDiagonal(player, board)) {
-                System.out.println("Player " + player + " wins!");
-                break;
+                //tried to setup winDiagonal but couldn't figure it out
             }
         }
     }
@@ -94,19 +92,7 @@ public class Assignment6C {
         return false;
     }
 
-    //todo
-    // if this isn't setup when I submit it just ignore it
-    public static boolean winDiagonal(int player, String [] []board) {
-        String playerChar = null;
-        if (player == 1) {
-            playerChar = "X";
-        } else if (player == 2) {
-            playerChar = "O";
-        }
-        //iff statement to set char
 
-        return false;
-    }
     public static String[][] printBoard(String[][] board) {
         int counter = 0;
         for (int i = 0; i < 4; i++) {
