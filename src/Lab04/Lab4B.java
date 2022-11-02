@@ -6,7 +6,7 @@
     Name: David Holland
     Lab#: 4
  */
-package Lab4;
+package Lab04;
 import java.util.*;
 public class Lab4B {
     public static void main(String[] args) {

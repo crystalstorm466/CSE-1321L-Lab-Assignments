@@ -6,8 +6,7 @@
     Name: David Holland
     Lab#: 6
  */
-package Lab6;
-import javax.swing.*;
+package Lab06;
 import java.util.*;
 
 public class Lab6C {

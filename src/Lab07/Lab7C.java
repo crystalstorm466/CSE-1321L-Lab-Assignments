@@ -6,21 +6,21 @@
     Name: David Holland
     Lab#: 7
  */
-package Lab7;
+package Lab07;
 import java.util.*;
-public class Lab7A {
+public class Lab7C {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
         System.out.print("Please enter a value for the size: ");
         int boxSize = scan.nextInt();
         int i;
-        System.out.println("This is the requested " + boxSize + "x" + boxSize + " box:");
-        for (i = 0; i <= boxSize-1;i++) {
-            for(int line = 0; line <= boxSize-2; line++) {
+        System.out.println("This is the requested " + boxSize + "x" + boxSize + " right-triangle:");
+        for (i = 0; i < boxSize;i++) {
+            for(int line = boxSize; line > i; line--) {
                 System.out.print("*");
             }
-            System.out.println("*");
+            System.out.println();
         }
 
 
