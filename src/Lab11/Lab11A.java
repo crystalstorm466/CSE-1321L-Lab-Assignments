@@ -15,7 +15,7 @@ public class Lab11A {
             System.out.println("Menu");
             System.out.println("0) Hello World\n" +
                     "1) Goodbye Moon\n" +
-                    "2) Walking on Sunshine");
+                    "2) Walking on Sunshine ");
             System.out.print("What you would you like to do: ");
             Scanner scan = new Scanner(System.in);
             int choice = scan.nextInt();
@@ -33,6 +33,7 @@ public class Lab11A {
         }
     }
     public static boolean optionToQuit() {
+        System.out.println(" ");
         System.out.print("Type YES to rerun. ");
         Scanner scan = new Scanner(System.in);
         String exitChoice = scan.next();

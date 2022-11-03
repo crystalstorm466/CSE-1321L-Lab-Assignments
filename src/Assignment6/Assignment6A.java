@@ -61,7 +61,15 @@ public class Assignment6A {
 
     public static boolean is_array_sorted(int[] array) {
         boolean isTarget = false;
-        for (int c = 0; c < array.length-1; c++) {
+
+        for (int i = 0; i < array.length - 1; i++) {
+            int check = array[i];
+            if (array[i] > array[i + 1]) {
+                return false;
+            }
+        }
+        return true;
+        /*for (int c = 0; c < array.length-1; c++) {
             for (int d = 0; d < array.length - c - 1; d++) {
                 if (array[d] < array[d + 1]) {
                     return true;
@@ -71,11 +79,26 @@ public class Assignment6A {
             }
         }
         return false;
+        */
+
     }
 
     public static int[] sort_array(int[] Sortarray) {
-            boolean isTargetOne = false;
-            for (int c = 0; c < Sortarray.length - 1; c++) {
+            int n = Sortarray.length;
+
+            for (int i = 0; i < n-1; i++) {
+                int min = i;
+                for (int j = i+1; j < n; j++) {
+                    if (Sortarray[j] < Sortarray[min]) {
+                        min = j;
+                    }
+
+                    int temp = Sortarray[min];
+                    Sortarray[min] = Sortarray[i];
+                    Sortarray[i] = min;
+                }
+            }
+            /*for (int c = 0; c < Sortarray.length - 1; c++) {
                 for (int d = 0; d < Sortarray.length - c - 1; d++) {
                     if (Sortarray[d] > Sortarray[d + 1]) {
                         int newValue = Sortarray[d];
@@ -83,7 +106,9 @@ public class Assignment6A {
                         Sortarray[d + 1] = newValue;
                     }
                 }
-            }
+            }*/
+
+
             return Sortarray;
         }
     }
