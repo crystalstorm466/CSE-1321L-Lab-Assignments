@@ -10,12 +10,12 @@ package Lab12;
 import java.util.*;
 
 public class Lab12A {
-    public static class Chair {
+    public static class Chair { //chiar make class,
        public static int numOfLegs;
        public static boolean rolling;
        public static String material;
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) { //driver class
         Chair newChair = new Chair();
         Scanner scan = new Scanner(System.in);
         System.out.println("You are about to create a chair.");
@@ -37,7 +37,7 @@ public class Lab12A {
         changeChair(newChair.material, newChair.rolling, newChair.numOfLegs);
     }
 
-    public static void changeChair(String mat, boolean roll, int legs) {
+    public static void changeChair(String mat, boolean roll, int legs) { //changeChair class
         mat = "wood";
         roll = false;
         legs = 8;

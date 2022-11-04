@@ -10,7 +10,8 @@ package Lab12;
 import java.util.*;
 
 public class Lab12B {
-    public static class Dog {
+
+    public static class Dog { //dog class
         public static int age;
         public static double weight;
         public static String name;
@@ -34,8 +35,7 @@ public class Lab12B {
         }
     }
 
-
-    public static void main(String[] args) {
+    public static void main(String[] args) { // main class or Driver class
         Dog newDog = new Dog();
         Scanner scan = new Scanner(System.in);
         System.out.println("You are about to create a dog.");
