@@ -13,6 +13,10 @@ Name:David Holland
 This is my github repository of all my lab projects 
 for the Fall 2022 Semester at Kennesaw State University
 
+[CCSE-1321 Lab Assignments](https://ccse.kennesaw.edu/fye/labs_and_assignments.php)
+
+[CCSE-1321 Resources](https://ccse.kennesaw.edu/fye/resources.php)
+
 Current Assignments:
 1. Assignment 1
 2. Assignment 2
@@ -31,10 +35,10 @@ Current Assignments:
 13. Lab 10
 14. Lab 11
 15. Lab 12
+16. Lab 13
 
 **~~I might set this repository public~~**
 
 **If this repository becomes public do not 
 let any one find out that I posted this. 
 Just change it up a bit so the teacher doesn't think you copied**
-
