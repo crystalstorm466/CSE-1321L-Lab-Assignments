@@ -6,7 +6,7 @@
     Name: David Holland
     Lab#: 12
  */
-package Lab12;
+//package Lab12;
 import java.util.*;
 
 public class Lab12B {
@@ -38,7 +38,7 @@ public class Lab12B {
     public static void main(String[] args) { // main class or Driver class
         Dog newDog = new Dog();
         Scanner scan = new Scanner(System.in);
-        System.out.println("You are about to create a dog.");
+        System.out.println("You are about to create a dog");
         System.out.print("How old is the dog: ");
         newDog.age = scan.nextInt();
         System.out.println("How much does the dog weigh: ");

@@ -6,7 +6,7 @@
     Name: David Holland
     Lab#: 12
  */
-package Lab12;
+//package Lab12;
 import java.util.*;
 
 public class Lab12A {
@@ -18,7 +18,7 @@ public class Lab12A {
     public static void main(String[] args) { //driver class
         Chair newChair = new Chair();
         Scanner scan = new Scanner(System.in);
-        System.out.println("You are about to create a chair.");
+        System.out.println("You are about to create a chair");
         System.out.print("How many legs does your chair have: ");
         newChair.numOfLegs = scan.nextInt();
         System.out.print("Is your chair rolling (true/false): ");
