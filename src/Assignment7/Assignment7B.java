@@ -48,7 +48,7 @@ public class Assignment7B {
             if (!(fsaArray[i].isActive())) {
                 notActive++;
             }
-            if (notActive == 4) {
+            if (notActive == 3) {
                 menu = false;
                 System.out.println("All machines have been turned off.");
                 System.exit(0);
