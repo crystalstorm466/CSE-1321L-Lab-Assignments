@@ -8,22 +8,21 @@ public class Assignment7A {
         int state = scan.nextInt();
         System.out.println(" ");
         boolean menu = true;
-        FSA FSA = new FSA(state);
-       int currentState =  FSA.goToNextState(state);
+        FSA FSAOne = new FSA(state);
         do {
+            System.out.println(" ");
             System.out.print("What will you do?\n" +
                     "-Go to next state\n" +
                     "-End ");
             String choice = ((scan.nextLine()).toLowerCase());
-            System.out.println(" ");
             switch(choice) {
                 case "go to next state":
-                    currentState = FSA.goToNextState(state);
+                    int currentState = FSAOne.goToNextState(state);
                     System.out.println("You're now at state " + currentState);
                     break;
                 case "end":
                 case "stop":
-                    if (FSA.end()) {
+                    if (FSAOne.end()) {
                         menu = false;
                         System.out.println("The machine has shut down.");
                         break;
