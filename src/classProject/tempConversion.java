@@ -1,4 +1,6 @@
 package classProject;
 
-public class tempConversion {
+class tempConversion {
+    private int temperature;
+
 }
