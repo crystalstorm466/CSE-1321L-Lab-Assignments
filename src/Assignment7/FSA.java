@@ -19,12 +19,14 @@ class FSA {
          if (!isActive()) {
              System.out.println("This machine is not active");
          }
+         active = true;
          state = states;
          return states++;
      }
 
      boolean end() {
         if (state == 3) {
+            active = false;
             return true;
         } else {
             return false;

@@ -6,7 +6,7 @@
     Name: David Holland
     Lab#: 13
  */
-package Lab13;
+//package Lab13;
 public class Lab13A {
     public static void main(String[] args) {
         BuildingBlueprint buildingOne = new BuildingBlueprint();
@@ -14,25 +14,21 @@ public class Lab13A {
 
 
         System.out.println("Year 2020:");
-        System.out.println(" ");
-        System.out.println("Building One has " + buildingOne.getStories() + " floors, " + buildingOne.getApartments() + " apartments, " +
-                "and is " + buildingOne.getOccupancyRate() + "%" + " occupied. Full? " + buildingOne.getFull());
-        System.out.println("Building Two has " + buildingTwo.getStories() + " floors, " + buildingTwo.getApartments() + " apartments, " +
-                "and is " + buildingTwo.getOccupancyRate() + "%" + " occupied. Full? " + buildingTwo.getFull());
+        System.out.println("Building 1 has " + buildingOne.getStories() + " floors, " + buildingOne.getApartments() + " apartments, " +
+                "and is " + (int) buildingOne.getOccupancyRate() + "%" + " occupied. Full? " + buildingOne.getFull());
+        System.out.println("Building 2 has " + buildingTwo.getStories() + " floors, " + buildingTwo.getApartments() + " apartments, " +
+                "and is " + (int) buildingTwo.getOccupancyRate() + "%" + " occupied. Full? " + buildingTwo.getFull());
         System.out.println("Many years pass.");
-        System.out.println(" ");
         System.out.println("Year 2043:");
 
         buildingOne.setOccupancyRate(0);
         buildingTwo.setOccupancyRate(1);
 
-        System.out.println(" ");
-        System.out.println("Building One has " + buildingOne.getStories() + " floors, " + buildingOne.getApartments() + " apartments, " +
-                "and is " + buildingOne.getOccupancyRate() + "%" + " occupied. Full? " + buildingOne.getFull());
-        System.out.println("Building Two has " + buildingTwo.getStories() + " floors, " + buildingTwo.getStories() + " apartments, " +
-                "and is " + buildingTwo.getOccupancyRate() + "%" + " occupied. Full? " + buildingTwo.getFull());
+        System.out.println("Building 1 has " + buildingOne.getStories() + " floors, " + buildingOne.getApartments() + " apartments, " +
+                "and is " + (int) buildingOne.getOccupancyRate() + "%" + " occupied. Full? " + buildingOne.getFull());
+        System.out.println("Building 2 has " + buildingTwo.getStories() + " floors, " + buildingTwo.getApartments() + " apartments, " +
+                "and is " + (int) buildingTwo.getOccupancyRate() + "%" + " occupied. Full? " + buildingTwo.getFull());
 
-        System.out.println(" ");
         System.out.println("Looks like people prefer taller buildings.");
     }
 
