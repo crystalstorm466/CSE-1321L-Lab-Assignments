@@ -20,12 +20,13 @@ class FSA {
              System.out.println("This machine is not active");
          }
          active = true;
-         state = states;
-         return states++;
+        
+        return state++;
+         
      }
 
      boolean end() {
-        if (state == 3) {
+        if (state >= 3) {
             active = false;
             return true;
         } else {
@@ -40,4 +41,7 @@ class FSA {
      boolean isActive() {
         if (active) { return true; } else { return false; }
         }
+    void setActive(boolean active) {
+        this.active = active;
+    }    
 }
