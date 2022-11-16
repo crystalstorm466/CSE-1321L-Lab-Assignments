@@ -23,6 +23,8 @@ public class Lab13A {
 
         buildingOne.setOccupancyRate(0);
         buildingTwo.setOccupancyRate(1);
+        buildingOne.setFull(false);
+        buildingTwo.setFull(true);
 
         System.out.println("Building 1 has " + buildingOne.getStories() + " floors, " + buildingOne.getApartments() + " apartments, " +
                 "and is " + (int) buildingOne.getOccupancyRate() + "%" + " occupied. Full? " + buildingOne.getFull());
@@ -47,8 +49,9 @@ class BuildingBlueprint {
         fullyOccupied = true;
     }
     public BuildingBlueprint(int stories, int apartments, float occupancy) {
-        if (occupancyRate >= 1) {
+        if (occupancy >= 1) {
             fullyOccupied = true;
+
         }
 
         this.stories = stories;
@@ -68,7 +71,7 @@ class BuildingBlueprint {
         apartments = newApartments;
     }
     void setOccupancyRate(int newOccupancyRate) {
-        occupancyRate =  newOccupancyRate;
+        occupancyRate =  (newOccupancyRate);
     }
     void setFull(boolean full) {
         fullyOccupied = full;

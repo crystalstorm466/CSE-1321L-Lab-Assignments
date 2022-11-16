@@ -26,7 +26,6 @@ public class Assignment7A {
                     System.out.println("You're now at state " + currentState++);
                     break;
                 case "end":
-                case "stop":
                     if (FSAOne.end()) {
                         menu = false;
                         System.out.println("The machine has shut down.");
