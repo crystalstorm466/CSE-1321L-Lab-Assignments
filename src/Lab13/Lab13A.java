@@ -17,7 +17,7 @@ public class Lab13A {
         System.out.println("Building 1 has " + buildingOne.getStories() + " floors, " + buildingOne.getApartments() + " apartments, " +
                 "and is " + (int) buildingOne.getOccupancyRate() + "%" + " occupied. Full? " + buildingOne.getFull());
         System.out.println("Building 2 has " + buildingTwo.getStories() + " floors, " + buildingTwo.getApartments() + " apartments, " +
-                "and is " + (int) buildingTwo.getOccupancyRate() + "%" + " occupied. Full? " + buildingTwo.getFull());
+                "and is " +  (int) (buildingTwo.getOccupancyRate() * 100 ) + "%" + " occupied. Full? " + buildingTwo.getFull());
         System.out.println("Many years pass.");
         System.out.println("Year 2043:");
 
@@ -71,6 +71,7 @@ class BuildingBlueprint {
         apartments = newApartments;
     }
     void setOccupancyRate(int newOccupancyRate) {
+        newOccupancyRate = newOccupancyRate*100;
         occupancyRate =  (newOccupancyRate);
     }
     void setFull(boolean full) {
