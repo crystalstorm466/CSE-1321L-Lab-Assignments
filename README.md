@@ -24,19 +24,25 @@ Current Assignments:
 4. Assignment 4
 5. Assignment 5
 6. Assignment 6
-5. Lab 2
-6. Lab 3
-7. Lab 4
-8. Lab 5
-9. Lab 6
-10. Lab 7
-11. Lab 8
-12. Lab 9
-13. Lab 10
-14. Lab 11
-15. Lab 12
-16. Lab 13
+7. Assignment 7
+8. Lab 2
+9. Lab 3
+10. Lab 4
+11. Lab 5
+12. Lab 6
+13. Lab 7
+14. Lab 8
+15. Lab 9
+16. Lab 10
+17. Lab 11
+18. Lab 12
+19. Lab 13
 
+There's also a class project we are doing that is optional.
+
+**Repoistory complete. No further work will be done**
+
+~~Unless I work on that that program we're doing in the lecture~~
 **~~I might set this repository public~~**
 
 **If this repository becomes public do not 
