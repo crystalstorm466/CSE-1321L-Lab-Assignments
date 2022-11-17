@@ -43,6 +43,7 @@ There's also a class project we are doing that is optional.
 **Repoistory complete. No further work will be done**
 
 ~~Unless I work on that that program we're doing in the lecture~~
+
 **~~I might set this repository public~~**
 
 **If this repository becomes public do not 
