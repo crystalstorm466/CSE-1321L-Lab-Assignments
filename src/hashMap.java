@@ -3,7 +3,7 @@ import java.util.*;
 
 
 //testing out a hashmap
-public class hashMap {
+public class hashMap { //elements of harmony source code
     public static void main(String[] args) {
         HashMap<String, String> capitalCities = new HashMap<String, String>();
         //hashmaps are good for coding interviews according to youtube lol
