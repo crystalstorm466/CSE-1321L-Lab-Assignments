@@ -1,4 +1,4 @@
-package RandomStuffFromLectures;
+package Equestria;
 
 public class Budget {
     private double budget;
@@ -6,6 +6,20 @@ public class Budget {
     private double militarySpending;
     private double networkUpgrades;
     private double totalSpent;
+
+    public Budget(double government, double military, double network) {
+        this.governmentSpending = government;
+        this.militarySpending = military;
+        this.networkUpgrades = network;
+
+
+
+
+    }
+
+    public Budget() {
+
+    }
 
     public double getBudget() {
         return budget;
@@ -39,4 +53,16 @@ public class Budget {
     }
 
 
+    public boolean overBudget() {
+        double spent;
+        spent = getTotalSpent();
+
+        if (spent > getBudget()) {
+            return true;
+        } else {
+            return false;
+        }
+
+
+    }
 }
