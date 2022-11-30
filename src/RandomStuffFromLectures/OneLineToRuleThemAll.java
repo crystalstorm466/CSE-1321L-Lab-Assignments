@@ -1,1 +1,1 @@
-package RandomStuffFromLectures; public class OneLineToRuleThemAll { public static void main(String[] args) { System.out.print("Why do I exist?"); }}
+package RandomStuffFromLectures; import java.util.Scanner; public class OneLineToRuleThemAll { public static void main(String[] args) { System.out.print("Why do I exist?"); Scanner scan = new Scanner(System.in); System.out.print("Why is this a thing? "); String input = scan.next(); if (input.equalsIgnoreCase("idk")) { System.out.println("Same."); System.exit(0); } else { throw new IllegalStateException("This is illegal"); }}}
