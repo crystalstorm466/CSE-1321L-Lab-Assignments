@@ -1,47 +1,39 @@
-package Equestria;
+package CitySkylines;
+import java.util.*;
 
-
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Scanner;
-
-public class equestriaSourceCode {
+public class citySkylines {
     public static void main(String[] args) {
         System.out.println("Welcome to Equestria.");
-        String[] cities = new String[5];
-        cities[1] = "Canterlot";
-        cities[2] = "Ponyville";
-        cities[3] = "Manehatten";
-        cities[4] = "Las pegasus";
+        String[] oldCities = new String[5];
+        oldCities[1] = "Canterlot";
+        oldCities[2] = "Ponyville";
+        oldCities[3] = "Manehatten";
+        oldCities[4] = "Las pegasus";
 
-        for (int i = 1; i < cities.length; i++) {
-            System.out.println("Existing Cities: " + cities[i]);
+        for (int i = 1; i < oldCities.length; i++) {
+            System.out.println("Existing Cities: " + oldCities[i]);
         }
         System.out.println("-----------------------------------------");
         System.out.println("These are the brand new cities that we will explore.");
-        int counter = 0;
-        String cityName = null;
-        String [] listOfCities = new String[5];
-        for (int i = 0; i <= 2; i++) {
-                counter++;
+        for (int i = 0; i <= 5; i++) {
+                citiesManager newCity [] = new citiesManager[5];
                 System.out.println("We found a new place for a city. Please describe it.");
                 System.out.print("What natural wonders do we see? ");
                 Scanner scan = new Scanner(System.in);
                 String naturalWonder = scan.next();
                 System.out.println("How many buildings do you estimate? ");
-                int buildings = scan.nextInt();
+                newCity[i].setBuildings(scan.nextInt());
                 System.out.println("How many residences do you estimate? ");
-                int residences = scan.nextInt();
-                citiesManager newCity = new citiesManager(buildings, residences, naturalWonder, counter);
-                newCity.setNaturalWonders(naturalWonder, counter);
+                newCity[i].setResidences(scan.nextInt());
+
+                newCity[i].setNaturalWonders(naturalWonder);
                 System.out.println("What is the name of the city? ");
-                cityName = scan.next();
-                newCity.setCities(cityName, counter);
-                Arrays.fill(listOfCities, cityName); //todo  I need to figure out how to save the names of the cities outside of the loop
+                newCity[i].setCities(scan.next());
+            for (int b = 0; b < newCity.length; b++) {
+                System.out.println("City " + i +": " + newCity[i].getCities());
+            }
         }
-        for (int n = 0; n < listOfCities.length; n++) {
-            System.out.println("City " + n + ": " + listOfCities[n]);
-        }
+
         System.out.println("-----------------------------------------");
         Budget equestrianBudget = new Budget();
         System.out.print("How much did we get in the budget this year? ");

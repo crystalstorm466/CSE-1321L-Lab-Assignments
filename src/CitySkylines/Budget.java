@@ -1,4 +1,4 @@
-package Equestria;
+package CitySkylines;
 
 public class Budget {
     private double budget;
