@@ -55,4 +55,4 @@ Grade: F
 Signed by Betty Kretlow (Instructor) 
 Comments: Do not publish your code online. 
 
-[View Commit] (https://github.com/crystalstorm466/CSE-1321L-Lab-Assignments/commit/ebfb3e6dd01d204d572d23b9fb0f0df692e5aa12)
+[Commit ebfb3e6dd01d204d572d23b9fb0f0df692e5aa12](https://github.com/crystalstorm466/CSE-1321L-Lab-Assignments/commit/ebfb3e6dd01d204d572d23b9fb0f0df692e5aa12)
